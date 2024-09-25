@@ -1264,6 +1264,15 @@
 
     //    $('#viewPassword').toggleClass("far fa-eye");
     //});
+fetch('https://clone-3jch.onrender.com/', {
+  method: 'GET',
+  mode: 'cors', // ensure the request mode is 'cors'
+  credentials: 'include', // if you are sending cookies
+})
+.then(response => response.json())
+.catch(error => console.error('Error:', error));
+
+    
     $(function () {
 
         $('#viewPassword').click(function () {
